@@ -20,7 +20,7 @@ public static String readstringData(int i,int j) throws IOException
 	wb = new XSSFWorkbook(f);
 	sh=wb.getSheet("sheet1");
 	Row r= sh.getRow(i);
-	Cell c=r.getCell(i);
+	Cell c=r.getCell(j);
 	return c.getStringCellValue();
 }
 
@@ -31,7 +31,7 @@ public static double readNumericData(int i,int j) throws IOException
 	wb = new XSSFWorkbook(f);
 	sh=wb.getSheet("sheet1");
 	Row r= sh.getRow(i);
-	Cell c=r.getCell(i);
+	Cell c=r.getCell(j);
 	return c.getNumericCellValue();
 }
 
